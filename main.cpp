@@ -3,11 +3,17 @@
 #include <iostream>
 #include <limits>
 
+using std::array;
+using std::cin;
+using std::cout;
+using std::numeric_limits;
+using std::streamsize;
+
 const char EmptyCell = ' ';
 const char HumanMarker = 'X';
 const char ComputerMarker = 'O';
 
-using Board = std::array<char, 9>;
+using Board = array<char, 9>;
 
 Board createBoard();
 bool isMoveValid(const Board &board, int position);
